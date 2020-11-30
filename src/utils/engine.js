@@ -1,6 +1,6 @@
 import { AT_T, NATO } from './alphabet';
 
-export default (type, words) => {
+export default function engine (type, words) {
   const inputEngine = type === 'nato' ? NATO : AT_T;
   const result = [];
 
