@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Button, Form, ListGroup, Col, Row, Container, Jumbotron } from 'react-bootstrap';
 import styles from '../styles/Home.module.scss';
 
-import engine from './engine';
+import engine from '../utils/engine';
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
