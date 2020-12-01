@@ -61,6 +61,7 @@ export default function Home() {
       setIsPronounce(true);
 
       result.forEach((item) => {
+        if (item === " ") return;
         const utterance = new SpeechSynthesisUtterance(
           `${item.slice(0, 1)} as in ${item}`
         );
